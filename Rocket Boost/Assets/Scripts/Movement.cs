@@ -4,7 +4,8 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] InputAction thrust;
     [SerializeField] InputAction rotation;
-    [SerializeField] float thrustStrength;
+    [SerializeField] float thrustStrength = 100f;
+    [SerializeField] float rotationStrength = 100f;
 
     Rigidbody rb;
     private void Start() {
@@ -33,5 +34,17 @@ public class Movement : MonoBehaviour
     private void ProcessRotation()
     {
         float rotationInput =  rotation.ReadValue<float>();
+        if(rotationInput < 0)
+        {
+            ApplayRotation(rotationStrength);
+        }
+        else if(rotationInput > 0){
+            ApplayRotation(-rotationStrength);
+        }
+    }
+
+    private void ApplayRotation(float rotationThisFrame)
+    {
+        transform.Rotate(Vector3.forward * rotationThisFrame * Time.fixedDeltaTime);
     }
 }

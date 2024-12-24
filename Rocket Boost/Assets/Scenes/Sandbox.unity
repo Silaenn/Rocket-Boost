@@ -315,7 +315,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.100001, y: 1.94, z: -10}
+  m_LocalPosition: {x: -8.100001, y: 4.3448706, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -699,7 +699,7 @@ Transform:
   m_GameObject: {fileID: 1267037804}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.100001, y: 1.94, z: -10}
+  m_LocalPosition: {x: -8.100001, y: 4.3448706, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -720,7 +720,7 @@ MonoBehaviour:
   CameraDistance: 10
   DeadZoneDepth: 0
   Composition:
-    ScreenPosition: {x: 0, y: 0}
+    ScreenPosition: {x: 0, y: 0.18}
     DeadZone:
       Enabled: 1
       Size: {x: 0.127, y: 0.52}
@@ -736,6 +736,63 @@ MonoBehaviour:
     Time: 0
     Smoothing: 0
     IgnoreY: 0
+--- !u!1001 &1236854129102657591
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 438112377645877711, guid: 6b497a25ac37e014698a413ec8fd9917, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 438112377645877711, guid: 6b497a25ac37e014698a413ec8fd9917, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 438112377645877711, guid: 6b497a25ac37e014698a413ec8fd9917, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 438112377645877711, guid: 6b497a25ac37e014698a413ec8fd9917, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 438112377645877711, guid: 6b497a25ac37e014698a413ec8fd9917, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 438112377645877711, guid: 6b497a25ac37e014698a413ec8fd9917, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 438112377645877711, guid: 6b497a25ac37e014698a413ec8fd9917, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 438112377645877711, guid: 6b497a25ac37e014698a413ec8fd9917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 438112377645877711, guid: 6b497a25ac37e014698a413ec8fd9917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 438112377645877711, guid: 6b497a25ac37e014698a413ec8fd9917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 963678298367890293, guid: 6b497a25ac37e014698a413ec8fd9917, type: 3}
+      propertyPath: m_Name
+      value: Dropship_01_Tank_Red
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b497a25ac37e014698a413ec8fd9917, type: 3}
 --- !u!1001 &3539518748233580449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -747,6 +804,14 @@ PrefabInstance:
     - target: {fileID: 638146629484396701, guid: ca753db92827aa6489d26d1db381ed73, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 912713218398140535, guid: ca753db92827aa6489d26d1db381ed73, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 912713218398140535, guid: ca753db92827aa6489d26d1db381ed73, type: 3}
+      propertyPath: m_Constraints
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 1639416429905245376, guid: ca753db92827aa6489d26d1db381ed73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -791,6 +856,10 @@ PrefabInstance:
     - target: {fileID: 6009322597558574465, guid: ca753db92827aa6489d26d1db381ed73, type: 3}
       propertyPath: m_Name
       value: Player Rocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456504590690024215, guid: ca753db92827aa6489d26d1db381ed73, type: 3}
+      propertyPath: m_Center.y
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -866,3 +935,4 @@ SceneRoots:
   - {fileID: 9173724659190658780}
   - {fileID: 833056585}
   - {fileID: 3539518748233580449}
+  - {fileID: 1236854129102657591}

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: ae61d5e2b3d02344ba8e32a043637c05, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -913,14 +913,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 783336189652677106, guid: ca753db92827aa6489d26d1db381ed73, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 783336189652677106, guid: ca753db92827aa6489d26d1db381ed73, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1639416429905245376, guid: ca753db92827aa6489d26d1db381ed73, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.1
@@ -965,14 +957,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Rocket
       objectReference: {fileID: 0}
-    - target: {fileID: 7220970461010389121, guid: ca753db92827aa6489d26d1db381ed73, type: 3}
-      propertyPath: crash
-      value: 
-      objectReference: {fileID: 8300000, guid: 0e7d0c2c9f18c2f49b8c0fd4ca71f971, type: 3}
-    - target: {fileID: 7220970461010389121, guid: ca753db92827aa6489d26d1db381ed73, type: 3}
-      propertyPath: success
-      value: 
-      objectReference: {fileID: 8300000, guid: fd1fa94c9f05e42428eabcb8526d4b73, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

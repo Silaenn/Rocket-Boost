@@ -1,12 +1,13 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float delay = 2f;
-    [SerializeField] AudioClip success;
-    [SerializeField] AudioClip crash;
+    [SerializeField] AudioClip successSFX;
+    [SerializeField] AudioClip crashSFX;
+    [SerializeField] ParticleSystem successParticles;
+    [SerializeField] ParticleSystem crashParticles;
 
     AudioSource audioSource;
 
@@ -33,7 +34,8 @@ public class CollisionHandler : MonoBehaviour
     {
         isControllable = false;
         audioSource.Stop();
-        audioSource.PlayOneShot(success);
+        audioSource.PlayOneShot(successSFX);
+        crashParticles.Play();
         GetComponent<Movement>().enabled = false;
         Invoke("ReloadLevel", delay); 
     }
@@ -41,7 +43,8 @@ public class CollisionHandler : MonoBehaviour
     void StartSuccessSeqFinishuence(){
         isControllable = false;
         audioSource.Stop();
-        audioSource.PlayOneShot(crash);
+        audioSource.PlayOneShot(crashSFX);
+        successParticles.Play();
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextScene", delay);
     }

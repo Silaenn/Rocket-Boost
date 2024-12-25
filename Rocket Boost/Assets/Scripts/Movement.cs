@@ -2,6 +2,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class Movement : MonoBehaviour
 {
+    // PARAMETERS  -  for tuning , typically set in the editor
+
+    // CAHCE  -  eg. rederences for readability or speed
+
+    // STATE  -  private instances (member) variables
+
     [SerializeField] InputAction thrust;
     [SerializeField] InputAction rotation;
     [SerializeField] float thrustStrength = 100f;

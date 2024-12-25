@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
@@ -11,14 +12,19 @@ public class CollisionHandler : MonoBehaviour
 
     AudioSource audioSource;
 
-    bool isControllable = true;
+     bool isControllable = true;
+     bool isCollidable = true;
 
     private void Start() {
         audioSource = GetComponent<AudioSource>();
     }
 
+    private void Update() {
+        RespondToDebugKeys();
+    }
+
     private void OnCollisionEnter(Collision other) {
-        if(!isControllable) {
+        if(!isControllable || !isCollidable) {
             return; 
         }
 
@@ -49,8 +55,6 @@ public class CollisionHandler : MonoBehaviour
         Invoke("LoadNextScene", delay);
     }
 
-
-
     void ReloadLevel(){
             int currentScene = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(currentScene);
@@ -64,4 +68,12 @@ public class CollisionHandler : MonoBehaviour
             }
             SceneManager.LoadScene(nextScene);
         }
+
+     void RespondToDebugKeys() {
+        if (Keyboard.current.lKey.wasPressedThisFrame){
+            LoadNextScene();
+        } else if(Keyboard.current.cKey.wasPressedThisFrame) {
+            isCollidable = !isCollidable;
+        }
+     }  
 }

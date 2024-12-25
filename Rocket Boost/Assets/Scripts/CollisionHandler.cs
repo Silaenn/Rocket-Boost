@@ -4,7 +4,16 @@ using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
-    float delay = 2f;
+    [SerializeField] float delay = 2f;
+    [SerializeField] AudioClip success;
+    [SerializeField] AudioClip crash;
+
+    AudioSource audioSource;
+
+    private void Start() {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnCollisionEnter(Collision other) {
         switch(other.gameObject.tag){
             case "Friendly": Debug.Log("Everything is looking good!");; break;
@@ -16,11 +25,13 @@ public class CollisionHandler : MonoBehaviour
 
     private void StartCrashSequence()
     {
+        audioSource.PlayOneShot(success);
         GetComponent<Movement>().enabled = false;
         Invoke("ReloadLevel", delay); 
     }
 
     void StartSuccessSeqFinishuence(){
+        audioSource.PlayOneShot(crash);
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextScene", delay);
     }

@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 912713218398140535}
   - component: {fileID: 6456504590690024215}
   - component: {fileID: 783336189652677106}
+  - component: {fileID: 7440090789039137097}
   m_Layer: 0
   m_Name: Player Rocket
   m_TagString: Untagged
@@ -548,6 +549,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7440090789039137097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009322597558574465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b52b5fc61fd1ee24596106d00f0714e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1568888883921888567
 PrefabInstance:
   m_ObjectHideFlags: 0

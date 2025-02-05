@@ -1,4 +1,4 @@
-# Rocket Boost
+# Rocket Boost.
 
 ![Screenshot 2025-01-12 035609](https://github.com/user-attachments/assets/d63da718-3b06-40b1-b115-c1b5fe761c7e)
 
